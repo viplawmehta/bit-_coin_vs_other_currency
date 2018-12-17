@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <style>
+    body{
+        width: 600px;
+        background-image: url("img9.jpeg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        font-family: 'Patrick Hand', cursive;
+      //  text-align: center;
+
+    }
+    h1{
+      font-family: 'Patrick Hand', cursive;
+      font-size:50px;
+      color:white;
+      margin:20px 150px 0px 150px;
+    }
+    .Square {
+        height :130px;
+        width :180px;
+        font-size :80px;
+        text-align :center;
+        font-weight:bold;
+        border-style:outset;
+        border-width: 5px;
+        border-color: grey;
+    }
+    .tbl{
+        margin: 0px 0px 0px 50px;
+      border-style:inset;
+      border-width: 5px;
+      border-color: grey;
+      background-image: url("tic12.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .div1{
+      font-size: 30px;
+      color:white;
+      margin: 0px 0px 0px 50px;
+    }
+    .div2{
+      margin:0px 0px 0px 400px;
+    }
+    .button2 {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+  //  background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    //box-shadow: 0 9px #999;
+    font-family: 'Patrick Hand', cursive;
+    background-image: url("img3.jpeg")
+    }
+
+    .button2:hover {background-color: #3e8e41}
+
+    .button2:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    }
+    h2{
+        font-family: 'Patrick Hand', cursive;
+      font-size:50px;
+      color:white;
+        margin: 0px 0px 0px 350px;
+    }
+    .tbl1{
+      margin: 0px 0px 0px 350px;
+    }
+    .btn2{
+      margin:20px 0px 0px 0px;
+    }
+    </style>
+</head>
+<body onload="startGame();">
+    <h1>TIC-TAC-TOE</h1>
+    <table >
+        <tr>
+            <td>
+    <div id="message" class="div1"></div>
+    <table border="1" class="tbl">
+
+    <tr>
+    <td class="Square" id="s1" onclick="nextMove(this)"></td>
+    <td class="Square" id="s2" onclick="nextMove(this)"></td>
+   <td class="Square" id="s3" onclick="nextMove(this)"></td>
+    </tr>
+    <tr>
+    <td class="Square" id="s4" onclick="nextMove(this)"></td>
+   <td class="Square" id="s5" onclick="nextMove(this)"></td>
+    <td class="Square" id="s6" onclick="nextMove(this)"></td>
+    </tr>
+    <tr>
+    <td class="Square" id="s7" onclick="nextMove(this)"></td>
+    <td class="Square" id="s8" onclick="nextMove(this)"></td>
+    <td class="Square" id="s9" onclick="nextMove(this)"></td>
+    </tr>
+    </table>
+  </div>
+    <br>
+    <div class="div2">
+
+    <a href="javascript: startGame()"><button class="button2">START OVER</button></a>
+    </div>
+</td>
+<td>
+    <h2>LEADER-BOARD</h2>
+   <table class="tbl1">
+
+
+    <tr>
+    <th class="div1">
+        PLAYER
+    </th>
+    <th class="div1">
+        SCORE
+    </th>
+    </tr>
+    <tr>
+        <td ><textarea  rows="1"  cols="15" id="player1"></textarea> </td>
+        <td ><textarea rows="1" cols="25" id="score1" disabled></textarea> </td>
+    </tr>
+    <tr>
+        <td ><textarea rows="1" cols="15" id="player2"></textarea></td>
+        <td><textarea rows="1" cols="25" id="score2" disabled></textarea> </td>
+    </tr>
+<tr>
+  <td>
+     <a href="home.html"><button onclick="myalert()" class="button2 btn2">HOME</button></a>
+     <a href="player2.html"><button onclick="myalert()" class="button2 btn2">BACK</button></a>
+   </td>
+ </tr>
+     </table>
+</td>
+</tr>
+</table>
+    <script src="tic_.js">
+      
+    </script>
+
+</body>
+</html>

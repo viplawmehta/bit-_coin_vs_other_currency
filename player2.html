@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PLAYER 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+<style type="text/css">
+  .div1{
+    margin:30px 400px 0px 400px;
+    text-align:center;
+  }
+  .div2{
+    margin:20px 0px 0px 120px;
+  }
+  .div3{
+   margin:20px 0px 0px 505px;
+  }
+  p{
+    font-size: 50px;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+  }
+  .text{
+    border:2px solid black;
+  }
+   body{
+    background-image: url("img8.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+  .button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  //box-shadow: 0 9px #999;
+  font-family: 'Patrick Hand', cursive;
+  background-image: url("img3.jpeg")
+  }
+
+  .button2:hover {background-color: #3e8e41}
+
+  .button2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+  textarea{
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+  }
+  </style>
+  </head>
+  <body>
+    <div class="div1">
+    <form>
+      <p>PLAYER 1</p>
+      <textarea rows="1" cols="30" class="text" id="player1"></textarea>
+      <p>PLAYER 2</p>
+      <textarea rows="1" cols="30" class="text" id="player2"></textarea>
+    </form>
+    </div>
+
+      <table>
+        <tr>
+          <td>
+          <a href="home.html"><button class="button2 div3">HOME</button></a>
+        </td>
+      <td>
+      <a href="ric.html"><button class="button2 div2">PLAY</button></a>
+    </td>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script >
+      var name1=document.getElementById("player1").value;
+      var name2=document.getElementById("player2").value;
+      window.localStorage.setItem("key1",name1);
+      window.localStorage.setItem("key2",name2);
+
+    </script>
+    </body>
+</html>

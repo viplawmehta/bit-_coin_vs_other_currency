@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GAME HOME PAGE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <style type="text/css">
+    .div1{
+      margin:100px 400px;
+      text-align: center;
+    }
+    .div2{
+      margin:50px 0px;
+    }
+    .button {
+display: inline-block;
+padding: 15px 25px;
+font-size: 40px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+//background-color: #4CAF50;
+border: none;
+border-radius: 15px;
+//box-shadow: 0 9px #999;
+background-image: url("img3.jpeg")
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+body{
+ background-image: url("img8.jpeg");
+ background-size:cover;
+ background-repeat: no-repeat;
+ font-family: 'Patrick Hand', cursive;
+}
+
+
+      </style>
+  </head>
+  <body>
+    <div class="div1">
+    <div>
+    <a href="player2.html"><button class="button">NEW GAME</button></a>
+    </div>
+    <div class="div2">
+    <a href="rulesxyz.html"><button class="button">RULES</button></a>
+    </div>
+    <div>
+    <a href="Tic_Tac_Toe.html"> <button onclick="myalert()" class="button">EXIT</button></a>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script >
+      function myalert(){
+        alert("Are you sure you want to exit?")
+      }
+    </script>
+  </body>
+</html>
